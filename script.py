@@ -25,8 +25,7 @@ def fun():
 
     sender = input("Enter your email address without 'gmail.com': ")
     password = getpass.getpass("Enter your 16-digit-app-password: ")
-
-    print("DONOR:     RECEIVER:")
+    
     i = 0
     while i < x:
         # random index from 0 to count
@@ -54,7 +53,7 @@ def email(sender, donor, receiver, password):
     #get the email address of the donor
     donor_e = input("Enter the email address of " + donor + ": ")
     #get the message
-    message = "Ciao "+ donor + " Dovrai fare un regalo a " + receiver + "!"
+    message = "Hi "+ donor + "! You'll have to give a gift to" + receiver + "!"
 
     #create a new email
     msg = MIMEMultipart()
